@@ -1,7 +1,8 @@
 <?php
 ob_start();
-session_set_cookie_params(2419200); // 4 weeks in seconds <3 
-session_start();
+session_start([
+    'cookie_lifetime' => 604800,
+]);
 
 function logoutbutton() {
 	echo "<form action='' method='get'><button name='logout' type='submit'>Logout</button></form>"; //logout button
