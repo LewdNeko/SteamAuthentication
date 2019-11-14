@@ -2,6 +2,7 @@
 ob_start();
 session_start([
     'cookie_lifetime' => 604800,
+    'gc_maxlifetime' => 604800,
 ]);
 
 function logoutbutton() {
