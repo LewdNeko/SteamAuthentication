@@ -1,5 +1,6 @@
 <?php
 ob_start();
+session_set_cookie_params(2419200); // 4 weeks in seconds <3
 session_start();
 
 function logoutbutton() {
